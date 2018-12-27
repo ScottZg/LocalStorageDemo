@@ -6,22 +6,12 @@
 	 <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
 </head>
 <body>
-	
-
-	<dir>
-		<button onclick="buttonclick()" >点击测试是否支持</button>
-	</dir>
-	<label hidden= "yes" id="is_support"></label>
 	<script type="text/javascript">
 		if (window.localStorage) {
-			var la = document.getElementById("is_support");
-			la.text = "支持localStorage"
+			document.write("支持localstorage\n");
 			}else {
-				la.text = "不支持localStorage";
+				document.write("不支持localstorage\n");
 			}
-		function buttonclick() {
-			alert(la.text);
-		}
 
 
 		if (localStorage.requestcount) {

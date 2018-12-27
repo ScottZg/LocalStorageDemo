@@ -7,7 +7,12 @@
 </head>
 <body>
 	<script type="text/javascript">
-		document.write("访问次数:"+localStorage.requestcount+"次");
+        if (window.localStorage) {
+             document.write("当前网页支持localstorage\n访问次数:"+localStorage.requestcount+"次");
+        }else {
+            document.write("当前网页不支持localstorage\n访问次数:"+localStorage.requestcount+"次");
+        }
+    
 	</script>
 </body>
 </html>

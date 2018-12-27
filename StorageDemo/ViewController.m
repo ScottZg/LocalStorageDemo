@@ -31,7 +31,7 @@
         UIWebViewController *vc = [[UIWebViewController alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
     }];
-    UIAlertAction *wkAction = [UIAlertAction actionWithTitle:@"UIWebViewController" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+    UIAlertAction *wkAction = [UIAlertAction actionWithTitle:@"WKWebViewController" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         WKWebViewController *vc = [[WKWebViewController alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
     }];

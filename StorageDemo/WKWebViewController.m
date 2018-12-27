@@ -31,10 +31,19 @@
     self.title = @"WKWebView加载";
 
 }
+//+ (WKProcessPool *)sharePool {
+//    static WKProcessPool *sharedPool = nil;
+//    static dispatch_once_t onceToken;
+//    dispatch_once(&onceToken, ^{
+//        sharedPool = [[WKProcessPool alloc] init];
+//    });
+//    return sharedPool;
+//}
 #pragma mark - lazy load
 - (WKWebView *)contentWebView {
     if (!_contentWebView) {
         WKWebViewConfiguration *config = [[WKWebViewConfiguration alloc] init];
+        config.processPool  = [[WKProcessPool alloc] init];
         _contentWebView = [[WKWebView alloc] initWithFrame:self.view.frame configuration:config];
         _contentWebView.UIDelegate = self;
         _contentWebView.navigationDelegate = self;
