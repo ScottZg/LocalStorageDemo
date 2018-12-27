@@ -17,6 +17,9 @@
 		561C59CA1D4B687F00E86C63 /* StorageDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 561C59C91D4B687F00E86C63 /* StorageDemoUITests.m */; };
 		561C59D81D4B68DA00E86C63 /* storage.html in Resources */ = {isa = PBXBuildFile; fileRef = 561C59D71D4B68DA00E86C63 /* storage.html */; };
 		561C59DC1D4B6A9000E86C63 /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = 561C59DB1D4B6A9000E86C63 /* UIView+Toast.m */; };
+		563AB46521D4741900D0A0B9 /* UIWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 563AB46421D4741900D0A0B9 /* UIWebViewController.m */; };
+		563AB46821D4742300D0A0B9 /* WKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 563AB46721D4742300D0A0B9 /* WKWebViewController.m */; };
+		563AB46A21D474FD00D0A0B9 /* storage_result.html in Resources */ = {isa = PBXBuildFile; fileRef = 563AB46921D474FD00D0A0B9 /* storage_result.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +59,11 @@
 		561C59D71D4B68DA00E86C63 /* storage.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = storage.html; sourceTree = "<group>"; };
 		561C59DA1D4B6A9000E86C63 /* UIView+Toast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Toast.h"; sourceTree = "<group>"; };
 		561C59DB1D4B6A9000E86C63 /* UIView+Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Toast.m"; sourceTree = "<group>"; };
+		563AB46321D4741900D0A0B9 /* UIWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIWebViewController.h; sourceTree = "<group>"; };
+		563AB46421D4741900D0A0B9 /* UIWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIWebViewController.m; sourceTree = "<group>"; };
+		563AB46621D4742300D0A0B9 /* WKWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WKWebViewController.h; sourceTree = "<group>"; };
+		563AB46721D4742300D0A0B9 /* WKWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WKWebViewController.m; sourceTree = "<group>"; };
+		563AB46921D474FD00D0A0B9 /* storage_result.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = storage_result.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +124,10 @@
 				561C59B21D4B687F00E86C63 /* LaunchScreen.storyboard */,
 				561C59B51D4B687F00E86C63 /* Info.plist */,
 				561C59A41D4B687F00E86C63 /* Supporting Files */,
+				563AB46321D4741900D0A0B9 /* UIWebViewController.h */,
+				563AB46421D4741900D0A0B9 /* UIWebViewController.m */,
+				563AB46621D4742300D0A0B9 /* WKWebViewController.h */,
+				563AB46721D4742300D0A0B9 /* WKWebViewController.m */,
 			);
 			path = StorageDemo;
 			sourceTree = "<group>";
@@ -123,6 +135,7 @@
 		561C59A41D4B687F00E86C63 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				563AB46921D474FD00D0A0B9 /* storage_result.html */,
 				561C59D71D4B68DA00E86C63 /* storage.html */,
 				561C59A51D4B687F00E86C63 /* main.m */,
 			);
@@ -259,6 +272,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				563AB46A21D474FD00D0A0B9 /* storage_result.html in Resources */,
 				561C59D81D4B68DA00E86C63 /* storage.html in Resources */,
 				561C59B41D4B687F00E86C63 /* LaunchScreen.storyboard in Resources */,
 				561C59B11D4B687F00E86C63 /* Assets.xcassets in Resources */,
@@ -290,7 +304,9 @@
 				561C59DC1D4B6A9000E86C63 /* UIView+Toast.m in Sources */,
 				561C59AC1D4B687F00E86C63 /* ViewController.m in Sources */,
 				561C59A91D4B687F00E86C63 /* AppDelegate.m in Sources */,
+				563AB46521D4741900D0A0B9 /* UIWebViewController.m in Sources */,
 				561C59A61D4B687F00E86C63 /* main.m in Sources */,
+				563AB46821D4742300D0A0B9 /* WKWebViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,6 +532,7 @@
 				561C59D01D4B687F00E86C63 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		561C59D11D4B687F00E86C63 /* Build configuration list for PBXNativeTarget "StorageDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +541,7 @@
 				561C59D31D4B687F00E86C63 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		561C59D41D4B687F00E86C63 /* Build configuration list for PBXNativeTarget "StorageDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +550,7 @@
 				561C59D61D4B687F00E86C63 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
