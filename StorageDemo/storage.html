@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>StorageDemo</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	
+
+	<dir>
+		<button onclick="buttonclick()" >点击测试是否支持</button>
+	</dir>
+	<label hidden= "yes" id="is_support"></label>
+	<script type="text/javascript">
+		if (window.localStorage) {
+			var la = document.getElementById("is_support");
+			la.text = "支持localStorage"
+			}else {
+				la.text = "不支持localStorage";
+			}
+		function buttonclick() {
+			alert(la.text);
+		}
+
+
+		if (localStorage.requestcount) {
+			localStorage.requestcount = Number(localStorage.requestcount)+1;
+		}else {
+			localStorage.requestcount = 1;
+		}
+		document.write("访问次数:"+localStorage.requestcount+"次");
+	</script>
+</body>
+</html>
