@@ -27,7 +27,7 @@
     [self.contentWebView loadRequest:[NSURLRequest requestWithURL:url]];
 }
 - (void)webView:(WKWebView *)webView didFinishNavigation:(WKNavigation *)navigation {
-    [self.view makeToast:@"网页加载完成"];
+    [self.view makeToast:@"网页加载完成,UIWebView的localStorage不能和WKWebView共享" duration:4 position:0];
     self.title = @"WKWebView加载";
 
 }
